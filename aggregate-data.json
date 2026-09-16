@@ -1,0 +1,825 @@
+{
+  "All": {
+    "kpis": {
+      "total_orders": 9994.0,
+      "total_sales": 2297201.0,
+      "total_profit": 286397.0,
+      "margin_pct": 12.5,
+      "avg_discount": 15.6
+    },
+    "subcat": [
+      {
+        "name": "Tables",
+        "profit": -17725.0,
+        "sales": 206966.0
+      },
+      {
+        "name": "Bookcases",
+        "profit": -3473.0,
+        "sales": 114880.0
+      },
+      {
+        "name": "Supplies",
+        "profit": -1189.0,
+        "sales": 46674.0
+      },
+      {
+        "name": "Fasteners",
+        "profit": 950.0,
+        "sales": 3024.0
+      },
+      {
+        "name": "Machines",
+        "profit": 3385.0,
+        "sales": 189239.0
+      },
+      {
+        "name": "Labels",
+        "profit": 5546.0,
+        "sales": 12486.0
+      },
+      {
+        "name": "Art",
+        "profit": 6528.0,
+        "sales": 27119.0
+      },
+      {
+        "name": "Envelopes",
+        "profit": 6964.0,
+        "sales": 16476.0
+      },
+      {
+        "name": "Furnishings",
+        "profit": 13059.0,
+        "sales": 91705.0
+      },
+      {
+        "name": "Appliances",
+        "profit": 18138.0,
+        "sales": 107532.0
+      },
+      {
+        "name": "Storage",
+        "profit": 21279.0,
+        "sales": 223844.0
+      },
+      {
+        "name": "Chairs",
+        "profit": 26590.0,
+        "sales": 328449.0
+      },
+      {
+        "name": "Binders",
+        "profit": 30222.0,
+        "sales": 203413.0
+      },
+      {
+        "name": "Paper",
+        "profit": 34054.0,
+        "sales": 78479.0
+      },
+      {
+        "name": "Accessories",
+        "profit": 41937.0,
+        "sales": 167380.0
+      },
+      {
+        "name": "Phones",
+        "profit": 44516.0,
+        "sales": 330007.0
+      },
+      {
+        "name": "Copiers",
+        "profit": 55618.0,
+        "sales": 149528.0
+      }
+    ],
+    "discount": [
+      {
+        "bucket": "0%",
+        "sortkey": 0.0,
+        "margin_pct": 29.5,
+        "profit": 320988.0,
+        "orders": 4798
+      },
+      {
+        "bucket": "1-20%",
+        "sortkey": 0.1,
+        "margin_pct": 11.9,
+        "profit": 100785.0,
+        "orders": 3803
+      },
+      {
+        "bucket": "21-40%",
+        "sortkey": 0.3,
+        "margin_pct": -15.3,
+        "profit": -35817.0,
+        "orders": 460
+      },
+      {
+        "bucket": "40%+",
+        "sortkey": 0.45,
+        "margin_pct": -77.4,
+        "profit": -99559.0,
+        "orders": 933
+      }
+    ],
+    "segment": [
+      {
+        "name": "Consumer",
+        "sales": 1161401.0,
+        "profit": 134119.0,
+        "avg_discount": 15.8
+      },
+      {
+        "name": "Corporate",
+        "sales": 706146.0,
+        "profit": 91979.0,
+        "avg_discount": 15.8
+      },
+      {
+        "name": "Home Office",
+        "sales": 429653.0,
+        "profit": 60299.0,
+        "avg_discount": 14.7
+      }
+    ],
+    "category": [
+      {
+        "name": "Technology",
+        "sales": 836154.0,
+        "profit": 145455.0,
+        "margin_pct": 17.4
+      },
+      {
+        "name": "Office Supplies",
+        "sales": 719047.0,
+        "profit": 122491.0,
+        "margin_pct": 17.0
+      },
+      {
+        "name": "Furniture",
+        "sales": 742000.0,
+        "profit": 18451.0,
+        "margin_pct": 2.5
+      }
+    ]
+  },
+  "West": {
+    "kpis": {
+      "total_orders": 3203.0,
+      "total_sales": 725458.0,
+      "total_profit": 108418.0,
+      "margin_pct": 14.9,
+      "avg_discount": 10.9
+    },
+    "subcat": [
+      {
+        "name": "Bookcases",
+        "profit": -1647.0,
+        "sales": 36004.0
+      },
+      {
+        "name": "Machines",
+        "profit": -619.0,
+        "sales": 42444.0
+      },
+      {
+        "name": "Fasteners",
+        "profit": 275.0,
+        "sales": 923.0
+      },
+      {
+        "name": "Supplies",
+        "profit": 626.0,
+        "sales": 18127.0
+      },
+      {
+        "name": "Tables",
+        "profit": 1483.0,
+        "sales": 84755.0
+      },
+      {
+        "name": "Envelopes",
+        "profit": 1909.0,
+        "sales": 4118.0
+      },
+      {
+        "name": "Labels",
+        "profit": 2303.0,
+        "sales": 5079.0
+      },
+      {
+        "name": "Art",
+        "profit": 2374.0,
+        "sales": 9212.0
+      },
+      {
+        "name": "Chairs",
+        "profit": 4028.0,
+        "sales": 101781.0
+      },
+      {
+        "name": "Furnishings",
+        "profit": 7641.0,
+        "sales": 30073.0
+      },
+      {
+        "name": "Appliances",
+        "profit": 8261.0,
+        "sales": 30236.0
+      },
+      {
+        "name": "Storage",
+        "profit": 8645.0,
+        "sales": 70533.0
+      },
+      {
+        "name": "Phones",
+        "profit": 9111.0,
+        "sales": 98684.0
+      },
+      {
+        "name": "Paper",
+        "profit": 12119.0,
+        "sales": 26664.0
+      },
+      {
+        "name": "Binders",
+        "profit": 16097.0,
+        "sales": 55961.0
+      },
+      {
+        "name": "Accessories",
+        "profit": 16485.0,
+        "sales": 61114.0
+      },
+      {
+        "name": "Copiers",
+        "profit": 19327.0,
+        "sales": 49749.0
+      }
+    ],
+    "discount": [
+      {
+        "bucket": "0%",
+        "sortkey": 0.0,
+        "margin_pct": 26.7,
+        "profit": 76503.0,
+        "orders": 1716
+      },
+      {
+        "bucket": "1-20%",
+        "sortkey": 0.15,
+        "margin_pct": 11.4,
+        "profit": 47930.0,
+        "orders": 1369
+      },
+      {
+        "bucket": "40%+",
+        "sortkey": 0.5,
+        "margin_pct": -93.9,
+        "profit": -16015.0,
+        "orders": 118
+      }
+    ],
+    "segment": [
+      {
+        "name": "Consumer",
+        "sales": 362881.0,
+        "profit": 57451.0,
+        "avg_discount": 10.8
+      },
+      {
+        "name": "Corporate",
+        "sales": 225855.0,
+        "profit": 34437.0,
+        "avg_discount": 11.4
+      },
+      {
+        "name": "Home Office",
+        "sales": 136722.0,
+        "profit": 16530.0,
+        "avg_discount": 10.7
+      }
+    ],
+    "category": [
+      {
+        "name": "Office Supplies",
+        "sales": 220853.0,
+        "profit": 52610.0,
+        "margin_pct": 23.8
+      },
+      {
+        "name": "Technology",
+        "sales": 251992.0,
+        "profit": 44304.0,
+        "margin_pct": 17.6
+      },
+      {
+        "name": "Furniture",
+        "sales": 252613.0,
+        "profit": 11505.0,
+        "margin_pct": 4.6
+      }
+    ]
+  },
+  "East": {
+    "kpis": {
+      "total_orders": 2848.0,
+      "total_sales": 678781.0,
+      "total_profit": 91523.0,
+      "margin_pct": 13.5,
+      "avg_discount": 14.5
+    },
+    "subcat": [
+      {
+        "name": "Tables",
+        "profit": -11025.0,
+        "sales": 39140.0
+      },
+      {
+        "name": "Bookcases",
+        "profit": -1168.0,
+        "sales": 43819.0
+      },
+      {
+        "name": "Supplies",
+        "profit": -1155.0,
+        "sales": 10760.0
+      },
+      {
+        "name": "Fasteners",
+        "profit": 264.0,
+        "sales": 820.0
+      },
+      {
+        "name": "Labels",
+        "profit": 1129.0,
+        "sales": 2603.0
+      },
+      {
+        "name": "Envelopes",
+        "profit": 1812.0,
+        "sales": 4376.0
+      },
+      {
+        "name": "Art",
+        "profit": 1900.0,
+        "sales": 7486.0
+      },
+      {
+        "name": "Furnishings",
+        "profit": 5881.0,
+        "sales": 29071.0
+      },
+      {
+        "name": "Machines",
+        "profit": 6929.0,
+        "sales": 66106.0
+      },
+      {
+        "name": "Storage",
+        "profit": 8389.0,
+        "sales": 71613.0
+      },
+      {
+        "name": "Appliances",
+        "profit": 8391.0,
+        "sales": 34188.0
+      },
+      {
+        "name": "Paper",
+        "profit": 9015.0,
+        "sales": 20173.0
+      },
+      {
+        "name": "Chairs",
+        "profit": 9358.0,
+        "sales": 96261.0
+      },
+      {
+        "name": "Accessories",
+        "profit": 11196.0,
+        "sales": 45033.0
+      },
+      {
+        "name": "Binders",
+        "profit": 11268.0,
+        "sales": 53498.0
+      },
+      {
+        "name": "Phones",
+        "profit": 12315.0,
+        "sales": 100615.0
+      },
+      {
+        "name": "Copiers",
+        "profit": 17023.0,
+        "sales": 53219.0
+      }
+    ],
+    "discount": [
+      {
+        "bucket": "0%",
+        "sortkey": 0.0,
+        "margin_pct": 30.8,
+        "profit": 105378.0,
+        "orders": 1449
+      },
+      {
+        "bucket": "1-20%",
+        "sortkey": 0.1,
+        "margin_pct": 14.8,
+        "profit": 28234.0,
+        "orders": 938
+      },
+      {
+        "bucket": "21-40%",
+        "sortkey": 0.3,
+        "margin_pct": -15.0,
+        "profit": -17871.0,
+        "orders": 257
+      },
+      {
+        "bucket": "40%+",
+        "sortkey": 0.5,
+        "margin_pct": -91.0,
+        "profit": -24218.0,
+        "orders": 204
+      }
+    ],
+    "segment": [
+      {
+        "name": "Consumer",
+        "sales": 350908.0,
+        "profit": 41191.0,
+        "avg_discount": 14.7
+      },
+      {
+        "name": "Home Office",
+        "sales": 127464.0,
+        "profit": 26709.0,
+        "avg_discount": 14.1
+      },
+      {
+        "name": "Corporate",
+        "sales": 200409.0,
+        "profit": 23623.0,
+        "avg_discount": 14.4
+      }
+    ],
+    "category": [
+      {
+        "name": "Technology",
+        "sales": 264974.0,
+        "profit": 47462.0,
+        "margin_pct": 17.9
+      },
+      {
+        "name": "Office Supplies",
+        "sales": 205516.0,
+        "profit": 41015.0,
+        "margin_pct": 20.0
+      },
+      {
+        "name": "Furniture",
+        "sales": 208291.0,
+        "profit": 3046.0,
+        "margin_pct": 1.5
+      }
+    ]
+  },
+  "South": {
+    "kpis": {
+      "total_orders": 1620.0,
+      "total_sales": 391722.0,
+      "total_profit": 46749.0,
+      "margin_pct": 11.9,
+      "avg_discount": 14.7
+    },
+    "subcat": [
+      {
+        "name": "Tables",
+        "profit": -4623.0,
+        "sales": 43916.0
+      },
+      {
+        "name": "Machines",
+        "profit": -1439.0,
+        "sales": 53891.0
+      },
+      {
+        "name": "Supplies",
+        "profit": 2.0,
+        "sales": 8319.0
+      },
+      {
+        "name": "Fasteners",
+        "profit": 174.0,
+        "sales": 503.0
+      },
+      {
+        "name": "Labels",
+        "profit": 1041.0,
+        "sales": 2353.0
+      },
+      {
+        "name": "Art",
+        "profit": 1059.0,
+        "sales": 4656.0
+      },
+      {
+        "name": "Bookcases",
+        "profit": 1339.0,
+        "sales": 10899.0
+      },
+      {
+        "name": "Envelopes",
+        "profit": 1465.0,
+        "sales": 3346.0
+      },
+      {
+        "name": "Storage",
+        "profit": 2274.0,
+        "sales": 35768.0
+      },
+      {
+        "name": "Furnishings",
+        "profit": 3443.0,
+        "sales": 17307.0
+      },
+      {
+        "name": "Copiers",
+        "profit": 3659.0,
+        "sales": 9300.0
+      },
+      {
+        "name": "Binders",
+        "profit": 3901.0,
+        "sales": 37030.0
+      },
+      {
+        "name": "Appliances",
+        "profit": 4124.0,
+        "sales": 19525.0
+      },
+      {
+        "name": "Paper",
+        "profit": 5947.0,
+        "sales": 14151.0
+      },
+      {
+        "name": "Chairs",
+        "profit": 6612.0,
+        "sales": 45176.0
+      },
+      {
+        "name": "Accessories",
+        "profit": 7005.0,
+        "sales": 27277.0
+      },
+      {
+        "name": "Phones",
+        "profit": 10767.0,
+        "sales": 58304.0
+      }
+    ],
+    "discount": [
+      {
+        "bucket": "0%",
+        "sortkey": 0.0,
+        "margin_pct": 29.2,
+        "profit": 62981.0,
+        "orders": 805
+      },
+      {
+        "bucket": "1-20%",
+        "sortkey": 0.2,
+        "margin_pct": 8.2,
+        "profit": 8649.0,
+        "orders": 644
+      },
+      {
+        "bucket": "21-40%",
+        "sortkey": 0.4,
+        "margin_pct": -39.9,
+        "profit": -6348.0,
+        "orders": 16
+      },
+      {
+        "bucket": "40%+",
+        "sortkey": 0.45,
+        "margin_pct": -33.8,
+        "profit": -18533.0,
+        "orders": 155
+      }
+    ],
+    "segment": [
+      {
+        "name": "Consumer",
+        "sales": 195581.0,
+        "profit": 26914.0,
+        "avg_discount": 14.2
+      },
+      {
+        "name": "Corporate",
+        "sales": 121886.0,
+        "profit": 15215.0,
+        "avg_discount": 15.8
+      },
+      {
+        "name": "Home Office",
+        "sales": 74255.0,
+        "profit": 4621.0,
+        "avg_discount": 14.3
+      }
+    ],
+    "category": [
+      {
+        "name": "Technology",
+        "sales": 148772.0,
+        "profit": 19992.0,
+        "margin_pct": 13.4
+      },
+      {
+        "name": "Office Supplies",
+        "sales": 125651.0,
+        "profit": 19986.0,
+        "margin_pct": 15.9
+      },
+      {
+        "name": "Furniture",
+        "sales": 117299.0,
+        "profit": 6771.0,
+        "margin_pct": 5.8
+      }
+    ]
+  },
+  "Central": {
+    "kpis": {
+      "total_orders": 2323.0,
+      "total_sales": 501240.0,
+      "total_profit": 39706.0,
+      "margin_pct": 7.9,
+      "avg_discount": 24.0
+    },
+    "subcat": [
+      {
+        "name": "Furnishings",
+        "profit": -3906.0,
+        "sales": 15254.0
+      },
+      {
+        "name": "Tables",
+        "profit": -3560.0,
+        "sales": 39155.0
+      },
+      {
+        "name": "Appliances",
+        "profit": -2639.0,
+        "sales": 23582.0
+      },
+      {
+        "name": "Bookcases",
+        "profit": -1998.0,
+        "sales": 24157.0
+      },
+      {
+        "name": "Machines",
+        "profit": -1486.0,
+        "sales": 26797.0
+      },
+      {
+        "name": "Binders",
+        "profit": -1044.0,
+        "sales": 56923.0
+      },
+      {
+        "name": "Supplies",
+        "profit": -662.0,
+        "sales": 9467.0
+      },
+      {
+        "name": "Fasteners",
+        "profit": 237.0,
+        "sales": 778.0
+      },
+      {
+        "name": "Labels",
+        "profit": 1073.0,
+        "sales": 2451.0
+      },
+      {
+        "name": "Art",
+        "profit": 1195.0,
+        "sales": 5765.0
+      },
+      {
+        "name": "Envelopes",
+        "profit": 1778.0,
+        "sales": 4637.0
+      },
+      {
+        "name": "Storage",
+        "profit": 1970.0,
+        "sales": 45930.0
+      },
+      {
+        "name": "Chairs",
+        "profit": 6593.0,
+        "sales": 85231.0
+      },
+      {
+        "name": "Paper",
+        "profit": 6972.0,
+        "sales": 17492.0
+      },
+      {
+        "name": "Accessories",
+        "profit": 7252.0,
+        "sales": 33956.0
+      },
+      {
+        "name": "Phones",
+        "profit": 12323.0,
+        "sales": 72403.0
+      },
+      {
+        "name": "Copiers",
+        "profit": 15609.0,
+        "sales": 37260.0
+      }
+    ],
+    "discount": [
+      {
+        "bucket": "0%",
+        "sortkey": 0.0,
+        "margin_pct": 31.3,
+        "profit": 76125.0,
+        "orders": 828
+      },
+      {
+        "bucket": "1-20%",
+        "sortkey": 0.1,
+        "margin_pct": 12.4,
+        "profit": 15973.0,
+        "orders": 852
+      },
+      {
+        "bucket": "21-40%",
+        "sortkey": 0.3,
+        "margin_pct": -11.7,
+        "profit": -11599.0,
+        "orders": 187
+      },
+      {
+        "bucket": "40%+",
+        "sortkey": 0.5,
+        "margin_pct": -135.3,
+        "profit": -40793.0,
+        "orders": 456
+      }
+    ],
+    "segment": [
+      {
+        "name": "Corporate",
+        "sales": 157996.0,
+        "profit": 18704.0,
+        "avg_discount": 24.0
+      },
+      {
+        "name": "Home Office",
+        "sales": 91213.0,
+        "profit": 12438.0,
+        "avg_discount": 20.9
+      },
+      {
+        "name": "Consumer",
+        "sales": 252031.0,
+        "profit": 8564.0,
+        "avg_discount": 25.2
+      }
+    ],
+    "category": [
+      {
+        "name": "Technology",
+        "sales": 170416.0,
+        "profit": 33697.0,
+        "margin_pct": 19.8
+      },
+      {
+        "name": "Office Supplies",
+        "sales": 167026.0,
+        "profit": 8880.0,
+        "margin_pct": 5.3
+      },
+      {
+        "name": "Furniture",
+        "sales": 163797.0,
+        "profit": -2871.0,
+        "margin_pct": -1.8
+      }
+    ]
+  }
+}

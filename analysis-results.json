@@ -1,0 +1,336 @@
+{
+  "standardized_regions": [
+    {
+      "region": "West",
+      "observed": 0.1494478652766463,
+      "standardized": 0.14774961891923014
+    },
+    {
+      "region": "East",
+      "observed": 0.13483288424396087,
+      "standardized": 0.12380525152062076
+    },
+    {
+      "region": "South",
+      "observed": 0.11934514616270253,
+      "standardized": 0.1426363727354938
+    },
+    {
+      "region": "Central",
+      "observed": 0.07921785658709037,
+      "standardized": 0.06871285092580887
+    }
+  ],
+  "decomposition": {
+    "gap": -0.05814051295252608,
+    "mix": 0.01040746531356185,
+    "within": -0.06854797826608788,
+    "contributions": [
+      {
+        "name": "Binders",
+        "central_margin": -0.01834056532508828,
+        "other_margin": 0.21343582111967452,
+        "mix_effect": 0.006829715832095548,
+        "within_effect": -0.026321642105337648,
+        "benchmark_gap_dollars": 13193.407245595232
+      },
+      {
+        "name": "Appliances",
+        "central_margin": -0.11190738699007717,
+        "other_margin": 0.24748359122800748,
+        "mix_effect": 7.529400821114303e-05,
+        "within_effect": -0.016908450772564875,
+        "benchmark_gap_dollars": 8475.158048338872
+      },
+      {
+        "name": "Furnishings",
+        "central_margin": -0.2560639832175167,
+        "other_margin": 0.22190684229114074,
+        "mix_effect": -0.002692993744861373,
+        "within_effect": -0.014545918251028574,
+        "benchmark_gap_dollars": 7290.96697230906
+      },
+      {
+        "name": "Storage",
+        "central_margin": 0.0428913564119312,
+        "other_margin": 0.10852434322200613,
+        "mix_effect": -0.0008063784425389601,
+        "within_effect": -0.00601415512029563,
+        "benchmark_gap_dollars": 3014.5230841867415
+      },
+      {
+        "name": "Machines",
+        "central_margin": -0.05545396872784267,
+        "other_margin": 0.02998627193873468,
+        "mix_effect": -0.0011090850544323162,
+        "within_effect": -0.004567774448749442,
+        "benchmark_gap_dollars": 2289.542129142273
+      },
+      {
+        "name": "Bookcases",
+        "central_margin": -0.0827089456472244,
+        "other_margin": -0.016269482595180882,
+        "mix_effect": 3.7742697421461774e-05,
+        "within_effect": -0.0032020279965769066,
+        "benchmark_gap_dollars": 1604.9781089482155
+      },
+      {
+        "name": "Accessories",
+        "central_margin": 0.21357050300388739,
+        "other_margin": 0.25996822160930566,
+        "mix_effect": -0.0017020023417011708,
+        "within_effect": -0.003143179353851031,
+        "benchmark_gap_dollars": 1575.480932965583
+      },
+      {
+        "name": "Paper",
+        "central_margin": 0.39858220900983304,
+        "other_margin": 0.44403817144356267,
+        "mix_effect": 0.0004170116086390075,
+        "within_effect": -0.0015863037018159008,
+        "benchmark_gap_dollars": 795.1156948907986
+      },
+      {
+        "name": "Supplies",
+        "central_margin": -0.06992711524242104,
+        "other_margin": -0.014164382088910391,
+        "mix_effect": 2.5910526760725104e-05,
+        "within_effect": -0.0010532038567791853,
+        "benchmark_gap_dollars": 527.9057947642854
+      },
+      {
+        "name": "Chairs",
+        "central_margin": 0.0773544836972463,
+        "other_margin": 0.08222253287174469,
+        "mix_effect": 0.0028462018766451437,
+        "within_effect": -0.0008277678451986323,
+        "benchmark_gap_dollars": 414.90869919167204
+      },
+      {
+        "name": "Tables",
+        "central_margin": -0.09092069978291406,
+        "other_margin": -0.08441043793315099,
+        "mix_effect": 0.0012932960891195093,
+        "within_effect": -0.0005085594123499673,
+        "benchmark_gap_dollars": 254.90930272747295
+      },
+      {
+        "name": "Envelopes",
+        "central_margin": 0.3834375673927108,
+        "other_margin": 0.43800675675675677,
+        "mix_effect": 0.0011644480475486078,
+        "within_effect": -0.000504824716164938,
+        "benchmark_gap_dollars": 253.0373310810812
+      },
+      {
+        "name": "Art",
+        "central_margin": 0.20728534258456202,
+        "other_margin": 0.24974243701414256,
+        "mix_effect": -9.702598863046472e-05,
+        "within_effect": -0.0004883212154436252,
+        "benchmark_gap_dollars": 244.76514938653182
+      },
+      {
+        "name": "Labels",
+        "central_margin": 0.43778049775601796,
+        "other_margin": 0.44573991031390137,
+        "mix_effect": -0.00031097107714808854,
+        "within_effect": -3.8920672772958606e-05,
+        "benchmark_gap_dollars": 19.508520179372226
+      },
+      {
+        "name": "Fasteners",
+        "central_margin": 0.3046272493573265,
+        "other_margin": 0.317453250222618,
+        "mix_effect": 9.57348584828183e-05,
+        "within_effect": -1.990796522449773e-05,
+        "benchmark_gap_dollars": 9.978628673196795
+      },
+      {
+        "name": "Copiers",
+        "central_margin": 0.4189210950080515,
+        "other_margin": 0.35637047065949334,
+        "mix_effect": 0.004213900808309482,
+        "within_effect": 0.004649759721384408,
+        "benchmark_gap_dollars": -2330.636263227278
+      },
+      {
+        "name": "Phones",
+        "central_margin": 0.1702001298288745,
+        "other_margin": 0.12497137067503096,
+        "mix_effect": 0.00012666560964077724,
+        "within_effect": 0.006533219446681484,
+        "benchmark_gap_dollars": -3274.697849015734
+      }
+    ]
+  },
+  "loss_cells": [
+    {
+      "region": "East",
+      "name": "Tables",
+      "profit": -11025.0,
+      "sales": 39140.0
+    },
+    {
+      "region": "South",
+      "name": "Tables",
+      "profit": -4623.0,
+      "sales": 43916.0
+    },
+    {
+      "region": "Central",
+      "name": "Furnishings",
+      "profit": -3906.0,
+      "sales": 15254.0
+    },
+    {
+      "region": "Central",
+      "name": "Tables",
+      "profit": -3560.0,
+      "sales": 39155.0
+    },
+    {
+      "region": "Central",
+      "name": "Appliances",
+      "profit": -2639.0,
+      "sales": 23582.0
+    },
+    {
+      "region": "Central",
+      "name": "Bookcases",
+      "profit": -1998.0,
+      "sales": 24157.0
+    },
+    {
+      "region": "West",
+      "name": "Bookcases",
+      "profit": -1647.0,
+      "sales": 36004.0
+    },
+    {
+      "region": "Central",
+      "name": "Machines",
+      "profit": -1486.0,
+      "sales": 26797.0
+    },
+    {
+      "region": "South",
+      "name": "Machines",
+      "profit": -1439.0,
+      "sales": 53891.0
+    },
+    {
+      "region": "East",
+      "name": "Bookcases",
+      "profit": -1168.0,
+      "sales": 43819.0
+    },
+    {
+      "region": "East",
+      "name": "Supplies",
+      "profit": -1155.0,
+      "sales": 10760.0
+    },
+    {
+      "region": "Central",
+      "name": "Binders",
+      "profit": -1044.0,
+      "sales": 56923.0
+    },
+    {
+      "region": "Central",
+      "name": "Supplies",
+      "profit": -662.0,
+      "sales": 9467.0
+    },
+    {
+      "region": "West",
+      "name": "Machines",
+      "profit": -619.0,
+      "sales": 42444.0
+    }
+  ],
+  "loss_pool": {
+    "regional": 36971.0,
+    "national": 22387.0,
+    "masked": 14584.0
+  },
+  "discount": {
+    "loss": 135376.0,
+    "positive": 421773.0,
+    "erosion": 0.3209688623975456,
+    "loss_record_share": 0.13938363017810687
+  },
+  "reconciliation": {
+    "All": {
+      "subcat": {
+        "sales": 0.0,
+        "profit": 2.0
+      },
+      "category": {
+        "sales": 0.0,
+        "profit": 0.0
+      },
+      "segment": {
+        "sales": -1.0,
+        "profit": 0.0
+      }
+    },
+    "West": {
+      "subcat": {
+        "sales": -1.0,
+        "profit": 0.0
+      },
+      "category": {
+        "sales": 0.0,
+        "profit": 1.0
+      },
+      "segment": {
+        "sales": 0.0,
+        "profit": 0.0
+      }
+    },
+    "East": {
+      "subcat": {
+        "sales": 0.0,
+        "profit": -1.0
+      },
+      "category": {
+        "sales": 0.0,
+        "profit": 0.0
+      },
+      "segment": {
+        "sales": 0.0,
+        "profit": 0.0
+      }
+    },
+    "South": {
+      "subcat": {
+        "sales": -1.0,
+        "profit": 1.0
+      },
+      "category": {
+        "sales": 0.0,
+        "profit": 0.0
+      },
+      "segment": {
+        "sales": 0.0,
+        "profit": 1.0
+      }
+    },
+    "Central": {
+      "subcat": {
+        "sales": -2.0,
+        "profit": 1.0
+      },
+      "category": {
+        "sales": -1.0,
+        "profit": 0.0
+      },
+      "segment": {
+        "sales": 0.0,
+        "profit": 0.0
+      }
+    }
+  }
+}

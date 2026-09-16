@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>The Margin Trap — Retail Profitability &amp; Discount Analysis</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Work+Sans:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="chart.umd.min.js"></script>
 <style>
   :root{
     --paper:#10140f;
@@ -194,8 +195,14 @@
     .wrap{padding:0 16px 70px;}
     header{padding:36px 0 26px;}
   }
+
+.research-intro{border-top:1px solid var(--line);padding:25px 0}.wrap p{line-height:1.85}.research-intro p,.wrap>section>p{max-width:900px;font-size:14px;color:var(--ink-soft)}.wrap strong{color:var(--ink)}.small-note,.filter-note{font-size:12px!important;color:var(--ink-soft)}.filter-note{margin:0 0 22px}.section-links{display:flex;gap:12px 24px;flex-wrap:wrap;margin-top:20px;font-size:12px}.section-links a{color:var(--dt-accent);text-underline-offset:4px}.table-scroll{overflow-x:auto;margin:25px 0;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;font-size:13px;line-height:1.7;text-align:left}caption{padding:18px;text-align:left;background:var(--dt-panel);color:var(--dt-accent);font-size:12px}th,td{padding:13px 18px;border-bottom:1px solid var(--line);vertical-align:top}thead th{font-weight:500;color:var(--ink-soft);font-size:11px}tbody th{font-weight:500}tbody tr:last-child>*{border:0}.bridge{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:28px 0}.bridge>div{padding:24px;background:var(--dt-panel)}.bridge span,.bridge small{display:block;font-size:12px;color:var(--ink-soft)}.bridge strong{display:block;font-size:35px;font-weight:400;color:var(--dt-accent);margin:10px 0}.scenario{padding:25px;border:1px solid var(--line);background:var(--dt-panel)}.scenario h3{font-size:22px;font-weight:500}.scenario-controls{display:flex;gap:20px;flex-wrap:wrap}.scenario-controls label{display:flex;flex-direction:column;gap:9px;font-size:12px}select,input{font:inherit;padding:10px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:3px;min-width:180px}#scenario-output{font-size:18px;color:var(--dt-accent);margin:20px 0}.wrap details{margin:24px 0;border-top:1px solid var(--line);padding:17px 0;font-size:13px;color:var(--ink-soft)}summary{cursor:pointer;color:var(--dt-accent)}.wrap code{overflow-wrap:anywhere}html{scroll-behavior:smooth;scroll-padding-top:24px}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--dt-accent);outline-offset:4px}.loss-number{color:#ee9870}section[id]{scroll-margin-top:24px}
+@media(max-width:640px){.bridge{grid-template-columns:1fr}th,td{padding:10px;font-size:11px}.table-scroll table{min-width:420px}.scenario{padding:18px}.scenario-controls label,.scenario-controls input,.scenario-controls select{width:100%;min-width:0}.scenario-controls{display:block}.scenario-controls label{margin:15px 0}.wrap>section>p{font-size:13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.insight{display:block}
 </style>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 
 /* Portfolio-wide dark editorial design. Existing analysis logic is retained. */
@@ -214,101 +221,104 @@ body{background:var(--dt-bg);color:var(--dt-text);-webkit-font-smoothing:antiali
 
 </style>
 <style>.wrap h2{text-transform:none}</style></head>
-<body><div class="dt-nav"><a class="dt-brand" href="/index.html"><b>dt</b> Daiki Takizawa.</a><span class="dt-project-label">RETAIL ANALYTICS</span><a class="dt-back" href="/index.html#projects">← All projects</a></div>
+<body><div class="dt-nav"><a class="dt-brand" href="https://takizawadaiki.github.io/index.html"><b>dt</b> Daiki Takizawa.</a><span class="dt-project-label">RETAIL ANALYTICS</span><a class="dt-back" href="https://takizawadaiki.github.io/index.html#projects">← All projects</a></div>
 <div class="wrap">
+<header>
+<div class="dt-editorial"><div><div class="dt-overline">Retail Analytics — SQL &amp; Interactive Visualization</div>
+<h1>The Margin<br/><em>Trap.</em></h1>
+<p class="subhead">Where does revenue fail to become profit—and which problems should a retail manager investigate first? A deeper look at product mix, regional economics and discount exposure across four US regions.</p></div><div class="dt-art"><span class="dt-art-label">FIG. 01 / AN INDEPENDENT PERSPECTIVE</span><svg aria-hidden="true" fill="none" style="color:#b9cf91" viewbox="0 0 500 300"><rect fill="currentColor" height="50" opacity="0.25" width="18" x="70" y="195"></rect><rect fill="currentColor" height="90" opacity="0.31" width="18" x="100" y="155"></rect><rect fill="currentColor" height="70" opacity="0.37" width="18" x="130" y="175"></rect><rect fill="currentColor" height="135" opacity="0.43" width="18" x="160" y="110"></rect><rect fill="currentColor" height="100" opacity="0.49" width="18" x="190" y="145"></rect><rect fill="currentColor" height="165" opacity="0.55" width="18" x="220" y="80"></rect><rect fill="currentColor" height="140" opacity="0.61" width="18" x="250" y="105"></rect><rect fill="currentColor" height="205" opacity="0.6699999999999999" width="18" x="280" y="40"></rect><rect fill="currentColor" height="170" opacity="0.73" width="18" x="310" y="75"></rect><rect fill="currentColor" height="120" opacity="0.79" width="18" x="340" y="125"></rect><rect fill="currentColor" height="90" opacity="0.85" width="18" x="370" y="155"></rect></svg><span class="dt-art-foot">DAIKI TAKIZAWA · RESEARCH &amp; ANALYTICS</span></div></div>
+<div class="research-intro"><div class="section-num">EXTENDED ANALYSIS · SEPTEMBER 2026</div><p><strong>The decision:</strong> which product–region combinations deserve attention before making blanket discount cuts or dropping whole categories?</p><p><strong>The main finding:</strong> Central’s weak margin survives adjustment for its broad product mix. National totals also hide losses in individual regions. Start with targeted checks of pricing, cost and product mix within those groups.</p><p class="small-note">Data basis: rounded aggregates embedded in the original dashboard, representing 9,994 source records. The transaction file, date coverage and original SQL are unavailable in the public repository. Unique orders, dataset provenance and cost definitions are not verified.</p><nav aria-label="Research sections" class="section-links"><a href="#mix">Product-mix comparison</a><a href="#drivers">Central’s gap</a><a href="#losses">Hidden losses</a><a href="#discount-exposure">Discount exposure</a><a href="#decision">Decision &amp; next test</a></nav></div><div class="tag-row">
+<span class="tag-label">Regional detail:</span>
+<button aria-pressed="true" class="price-tag active" data-region="All">All Regions</button>
+<button aria-pressed="false" class="price-tag" data-region="West">West</button>
+<button aria-pressed="false" class="price-tag" data-region="East">East</button>
+<button aria-pressed="false" class="price-tag" data-region="South">South</button>
+<button aria-pressed="false" class="price-tag" data-region="Central">Central</button>
+</div><p class="filter-note">Region buttons update the overview, loss review and segment table. Cross-region comparisons remain visible for context.</p>
+<div class="kpi-grid">
+<div class="kpi">
+<div class="kpi-label">Total Sales</div>
+<div class="kpi-value" id="kpi-sales">—</div>
+</div>
+<div class="kpi">
+<div class="kpi-label">Total Profit</div>
+<div class="kpi-value" id="kpi-profit">—</div>
+</div>
+<div class="kpi">
+<div class="kpi-label">Profit Margin</div>
+<div class="kpi-value" id="kpi-margin">—</div>
+</div>
+<div class="kpi">
+<div class="kpi-label">Avg. Discount</div>
+<div class="kpi-value" id="kpi-discount">—</div>
+</div>
+</div><noscript><p>This dashboard needs JavaScript for its charts and region filters. The extended comparisons below are static; download the aggregate data for complete values.</p></noscript>
+</header>
+<section id="overview-1">
+<div class="section-num">01 — PRODUCT PROFITABILITY</div>
+<h2>A net loss identifies a problem to investigate</h2>
+<p class="section-sub">Recorded profit by product sub-category. A negative total does not mean every transaction lost money.</p>
+<div class="chart-box"><canvas aria-label="Recorded profit by sub-category for selected region" id="chartSubcat" role="img">Chart requires JavaScript. Download the published aggregates below for all values.</canvas></div>
+<div class="insight">
+<span id="insight-subcat">Loading…</span>
+</div>
+</section>
+<section id="overview-2">
+<div class="section-num">02 — DISCOUNT STRATEGY</div>
+<h2>Deep discount tiers have negative aggregate margins</h2>
+<p class="section-sub">Recorded profit divided by sales within each source discount tier. These are associations, not estimated effects of changing prices.</p>
+<div class="chart-box"><canvas aria-label="Aggregate margin by source discount tier for selected region" id="chartDiscount" role="img">Chart requires JavaScript. Download the published aggregates below for all values.</canvas></div>
+<div class="insight">
+<span id="insight-discount">Loading…</span>
+</div>
+<div class="stamp">
+<div class="stamp-label">⚠ What this doesn't prove</div>
+<p>Discounts may coincide with different products, customers or inventory conditions. These aggregates do not isolate those explanations. <strong>A margin below zero is a loss relative to recorded sales, not proof that every sale was unprofitable.</strong> The original tier labels overlap at 40%; their exact boundaries need the missing SQL or raw records.</p>
+</div>
+</section>
+<section id="overview-3">
+<div class="section-num">03 — REGIONAL PERFORMANCE</div>
+<h2>Revenue scale and margin tell different stories</h2>
+<p class="section-sub">Sales and recorded profit margin for the selected region, or all four regions.</p>
+<div class="chart-box"><canvas aria-label="Regional sales and recorded profit margins" id="chartRegion" role="img">Chart requires JavaScript. Download the published aggregates below for all values.</canvas></div>
+<div class="insight">
+<span id="insight-region">Loading…</span>
+</div>
+</section>
+<section id="overview-4">
+<div class="section-num">04 — CUSTOMER SEGMENTS</div>
+<h2>The largest segment is not always the most efficient</h2>
+<p class="section-sub">Total recorded profit by customer segment. Compare margins below before making allocation decisions.</p>
+<div class="chart-box"><canvas aria-label="Recorded profit by customer segment for selected region" id="chartSegment" role="img">Chart requires JavaScript. Download the published aggregates below for all values.</canvas></div>
+<div class="insight">
+<span id="insight-segment">Loading…</span>
+</div>
+</section>
 
-  <header>
-    <div class="dt-editorial"><div><div class="dt-overline">Retail Analytics — SQL &amp; Interactive Visualization</div>
-    <h1>The Margin<br><em>Trap.</em></h1>
-    <p class="subhead">Which products and discount policies are actually making money — and which are quietly bleeding it? An analysis of 9,994 real retail orders across four US regions.</p></div><div class="dt-art"><span class="dt-art-label">FIG. 01 / AN INDEPENDENT PERSPECTIVE</span><svg viewBox="0 0 500 300" aria-hidden="true" fill="none" style="color:#b9cf91"><rect x="70" y="195" width="18" height="50" fill="currentColor" opacity="0.25"/><rect x="100" y="155" width="18" height="90" fill="currentColor" opacity="0.31"/><rect x="130" y="175" width="18" height="70" fill="currentColor" opacity="0.37"/><rect x="160" y="110" width="18" height="135" fill="currentColor" opacity="0.43"/><rect x="190" y="145" width="18" height="100" fill="currentColor" opacity="0.49"/><rect x="220" y="80" width="18" height="165" fill="currentColor" opacity="0.55"/><rect x="250" y="105" width="18" height="140" fill="currentColor" opacity="0.61"/><rect x="280" y="40" width="18" height="205" fill="currentColor" opacity="0.6699999999999999"/><rect x="310" y="75" width="18" height="170" fill="currentColor" opacity="0.73"/><rect x="340" y="125" width="18" height="120" fill="currentColor" opacity="0.79"/><rect x="370" y="155" width="18" height="90" fill="currentColor" opacity="0.85"/></svg><span class="dt-art-foot">DAIKI TAKIZAWA · RESEARCH & ANALYTICS</span></div></div>
-    <div class="tag-row">
-      <span class="tag-label">Filter by region:</span>
-      <button class="price-tag active" data-region="All">All Regions</button>
-      <button class="price-tag" data-region="West">West</button>
-      <button class="price-tag" data-region="East">East</button>
-      <button class="price-tag" data-region="South">South</button>
-      <button class="price-tag" data-region="Central">Central</button>
-    </div>
-
-    <div class="kpi-grid">
-      <div class="kpi">
-        <div class="kpi-label">Total Sales</div>
-        <div class="kpi-value" id="kpi-sales">—</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-label">Total Profit</div>
-        <div class="kpi-value" id="kpi-profit">—</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-label">Profit Margin</div>
-        <div class="kpi-value" id="kpi-margin">—</div>
-      </div>
-      <div class="kpi">
-        <div class="kpi-label">Avg. Discount</div>
-        <div class="kpi-value" id="kpi-discount">—</div>
-      </div>
-    </div>
-  </header>
-
-  <section>
-    <div class="section-num">01 — PRODUCT PROFITABILITY</div>
-    <h2>Some products are quietly losing money on every sale</h2>
-    <p class="section-sub">Total profit by sub-category. Red bars are net losses — the business pays to sell these, once discounts and costs are counted.</p>
-    <div class="chart-box"><canvas id="chartSubcat"></canvas></div>
-    <div class="insight">
-      <span id="insight-subcat">Loading…</span>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-num">02 — DISCOUNT STRATEGY</div>
-    <h2>Past a certain discount, every sale destroys value</h2>
-    <p class="section-sub">Profit margin by discount tier. Full-price and light-discount orders are healthy — heavy discounting flips margin sharply negative.</p>
-    <div class="chart-box"><canvas id="chartDiscount"></canvas></div>
-    <div class="insight">
-      <span id="insight-discount">Loading…</span>
-    </div>
-
-    <div class="stamp">
-      <div class="stamp-label">⚠ What this doesn't prove</div>
-      <p>This shows a strong <strong>correlation</strong> between heavy discounting and negative margin — it doesn't prove discounting alone <em>causes</em> the loss. Deep discounts often get applied to already-low-margin categories (like Tables and Bookcases) to move slow inventory, so some of this effect is products that were already thin-margin, discounted further. Worth separating "bad discount policy" from "bad product economics" before recommending a fix.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-num">03 — REGIONAL PERFORMANCE</div>
-    <h2>Central region sells nearly as much as South — but keeps far less of it</h2>
-    <p class="section-sub">Sales vs. profit margin by region.</p>
-    <div class="chart-box"><canvas id="chartRegion"></canvas></div>
-    <div class="insight">
-      <span id="insight-region">Loading…</span>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-num">04 — CUSTOMER SEGMENTS</div>
-    <h2>Consumer orders drive the most profit, at a comparable discount rate</h2>
-    <p class="section-sub">Profit contribution by customer segment.</p>
-    <div class="chart-box"><canvas id="chartSegment"></canvas></div>
-    <div class="insight">
-      <span id="insight-segment">Loading…</span>
-    </div>
-  </section>
-
-  <footer>
-    <div class="section-num">METHODOLOGY</div>
-    <p>Built by loading the raw dataset into SQLite and answering each business question with SQL (<code>GROUP BY</code>, aggregate functions, <code>CASE WHEN</code> discount bucketing), then visualizing results interactively here. Dataset: 9,994 orders from a US retail superstore across Consumer, Corporate, and Home Office segments.</p>
-    <div class="tools-row">
-      <span class="tool-pill">SQL / SQLite</span>
-      <span class="tool-pill">Python</span>
-      <span class="tool-pill">Chart.js</span>
-      <span class="tool-pill">9,994 orders</span>
-    </div>
-    <p><a href="analysis_queries.sql">→ View all SQL queries used in this analysis</a></p>
-  </footer>
+<section id="mix"><div class="section-num">05 — SEPARATING MIX FROM MARGIN</div><h2>Central’s weakness survives a fairer product comparison</h2><p>Regions sell different combinations of products. To compare them on a common basis, assign every region the same sales shares across the 17 sub-categories, while retaining each region’s observed margin in each sub-category.</p>
+<div class="table-scroll"><table><caption>All regions · observed versus common-mix margin</caption><thead><tr><th>Region</th><th>Observed</th><th>Common mix</th><th>Change</th></tr></thead><tbody><tr><th>West</th><td>14.9%</td><td>14.8%</td><td>-0.17 pp</td></tr><tr><th>East</th><td>13.5%</td><td>12.4%</td><td>-1.10 pp</td></tr><tr><th>South</th><td>11.9%</td><td>14.3%</td><td>+2.33 pp</td></tr><tr><th>Central</th><td>7.9%</td><td>6.9%</td><td>-1.05 pp</td></tr></tbody></table></div>
+<div class="insight"><strong>Central remains last at 6.9%.</strong> South rises from 11.9% to 14.3% and moves ahead of East under the common mix. The ranking is sensitive to what each region sells, but Central’s problem persists.</div>
+<p>This is an accounting comparison, not a forecast of what would happen if the assortment changed. It controls for broad sub-category sales shares only. Product models, discount levels, customer mix, shipping, timing and quantities can still differ within a sub-category.</p>
+<details><summary>How the common-mix comparison works</summary><p>For each sub-category, divide its sales summed across the four regions by total regional sales. Multiply that common weight by each region’s sub-category margin (profit ÷ sales), then sum across all 17 groups. All margins in this extension use the underlying displayed dollar totals, rather than rounded percentage fields. A percentage-point change is the difference between two percentages.</p></details></section>
+<section id="drivers"><div class="section-num">06 — EXPLAINING CENTRAL’S GAP</div><h2>Three groups account for most of the within-category shortfall</h2><p>Central’s margin is <strong>5.81 percentage points below the other three regions combined</strong>. A decomposition separates differences in product shares from differences in margin within those products.</p>
+<div class="bridge"><div><span>Product mix</span><strong>+1.04 pp</strong><small>Central’s sales shares help at other-region margins</small></div><div><span>Within-sub-category margins</span><strong>−6.85 pp</strong><small>Lower margins more than offset the mix advantage</small></div><div><span>Net margin gap</span><strong>−5.81 pp</strong><small>Central minus the rest of the business</small></div></div>
+<div class="table-scroll"><table><caption>Largest negative within-sub-category contributions</caption><thead><tr><th>Sub-category</th><th>Central margin</th><th>Other regions</th><th>Gap contribution</th></tr></thead><tbody><tr><th>Binders</th><td>-1.8%</td><td>21.3%</td><td>-2.63 pp</td></tr><tr><th>Appliances</th><td>-11.2%</td><td>24.7%</td><td>-1.69 pp</td></tr><tr><th>Furnishings</th><td>-25.6%</td><td>22.2%</td><td>-1.45 pp</td></tr><tr><th>Storage</th><td>4.3%</td><td>10.9%</td><td>-0.60 pp</td></tr><tr><th>Machines</th><td>-5.5%</td><td>3.0%</td><td>-0.46 pp</td></tr></tbody></table></div>
+<p><strong>Binders, Appliances and Furnishings contribute −5.78 percentage points together.</strong> That is about 84% of the net within-sub-category component; better results in Phones and Copiers offset part of the weakness elsewhere. Binders are especially worth examining: the national total is profitable, but Central’s total is negative.</p>
+<p>This identifies where to investigate, not who or what is responsible. Possible explanations include deeper discounting, different items within the same group, unfavorable costs or customer mix. The aggregate data cannot distinguish them.</p>
+<details><summary>Decomposition formula and benchmark choice</summary><p>Let w be a sub-category’s share of regional sales and m its profit-to-sales margin. “C” is Central and “O” combines West, East and South. Mix = Σ(wC − wO)mO; within = ΣwC(mC − mO). Their sum equals Central’s margin minus the others’ margin. This uses the other regions as the reference; a different reference can change the split. Dollar-level rounding causes small differences from headline KPIs.</p></details></section>
+<section id="losses"><div class="section-num">07 — LOSSES HIDDEN BY AGGREGATION</div><h2>A profitable national category can contain an unprofitable region</h2><p>Across the four regions, 14 sub-category–region groups have negative aggregate profit totaling <strong>$36,971</strong>. Looking only at nationally negative sub-categories identifies <strong>$22,387</strong>. Regional gains offset <strong>$14,584</strong> of losses in the national view, making local problems less visible.</p><p>These figures are net losses within groups, not the sum of all losing transactions. Profitable transactions inside each group may offset additional losses. Neither figure is automatically recoverable profit.</p>
+<div class="table-scroll"><table><caption id="loss-caption">Loss review</caption><thead><tr><th>Region</th><th>Sub-category</th><th>Sales</th><th>Profit</th><th>Margin</th></tr></thead><tbody id="loss-rows"></tbody></table></div>
+<div class="scenario"><h3>What would a targeted intervention need to deliver?</h3><p>Illustrative arithmetic, not a forecast. Hold sales constant and assume a selected share of this view’s net negative group profit is eliminated. Subtract an incremental intervention cost.</p><div class="scenario-controls"><label for="recovery">Assumed share of losses eliminated<select id="recovery"><option value="0">0%</option><option selected="" value="0.25">25%</option><option value="0.5">50%</option><option value="0.75">75%</option><option value="1">100%</option></select></label><label for="intervention-cost">Assumed intervention cost ($)<input id="intervention-cost" min="0" step="100" type="number" value="5000"/></label></div><p aria-live="polite" id="scenario-output"></p><p class="small-note">Net change = selected loss pool × assumed recovery share − intervention cost. Demand, cross-selling and cost avoidability are unknown; real results can be worse, including beyond this range. Do not add this loss pool to discount-tier losses: they overlap.</p></div></section>
+<section id="discount-exposure"><div class="section-num">08 — QUANTIFYING DISCOUNT EXPOSURE</div><h2>A small share of records offsets a substantial share of profit</h2><p>In the two negative-margin source tiers, 1,393 records—<strong>13.9% of the dataset</strong>—sum to <strong>$135,376 in net losses</strong>. They offset <strong>32.1%</strong> of the $421,773 earned in the other two tiers. The resulting total is $286,397.</p><div class="table-scroll"><table><caption>All regions · discount-tier accounting</caption><thead><tr><th>Source tier</th><th>Records</th><th>Recorded profit</th><th>Margin</th></tr></thead><tbody><tr><th>0%</th><td>4,798</td><td>$320,988</td><td>29.5%</td></tr><tr><th>1-20%</th><td>3,803</td><td>$100,785</td><td>11.9%</td></tr><tr><th>21-40%</th><td>460</td><td>−$35,817</td><td>-15.3%</td></tr><tr><th>40%+</th><td>933</td><td>−$99,559</td><td>-77.4%</td></tr></tbody></table></div>
+<p>The deepest tier accounts for $99,559 of these losses; Central contributes $40,793, or 41.0%, of that tier’s net loss. That makes it a sensible place to audit exceptions. It does not establish a universal safe discount threshold, and the source labels do not resolve how exactly 40% was classified.</p>
+<p><strong>The next question is incremental profit:</strong> would customers still buy with a smaller discount, and at what quantity? Simply removing a discount assumes away the demand response. The current aggregates cannot estimate that response, inventory holding costs or the value of clearing stock.</p></section>
+<section id="segments"><div class="section-num">09 — SCALE VERSUS EFFICIENCY</div><h2>Compare customer segments on both dollars and margin</h2><p>Consumer contributes the most total profit nationally, but Home Office has the highest profit-to-sales margin. Neither proves which segment would respond best to more spending: acquisition costs, retention and future demand are not available.</p><div class="table-scroll"><table><caption id="segment-caption">Segment comparison</caption><thead><tr><th>Segment</th><th>Sales share</th><th>Profit</th><th>Margin</th></tr></thead><tbody id="segment-rows"></tbody></table></div><p class="insight" id="segment-detail"></p></section>
+<section id="decision"><div class="section-num">10 — FROM DIAGNOSIS TO A BUSINESS DECISION</div><h2>Investigate narrow problems before making broad cuts</h2><div class="table-scroll"><table><caption>Priorities supported by the available aggregates</caption><thead><tr><th>Priority</th><th>Evidence</th><th>Decision test</th></tr></thead><tbody><tr><th>Audit Central’s Binders, Appliances and Furnishings</th><td>Largest negative contributions to its within-sub-category margin gap</td><td>Compare the same products, quantities and periods across regions; reconcile costs and discount exceptions.</td></tr><tr><th>Review East Tables and local loss groups</th><td>East Tables alone records a $11,025 net loss; national totals hide additional regional weakness</td><td>Identify repeated losses by product and customer before repricing or removing an assortment.</td></tr><tr><th>Pilot a narrower discount policy</th><td>Negative tiers offset 32.1% of positive-tier profit</td><td>Test eligible offers against current policy; judge incremental profit with demand and inventory effects included.</td></tr></tbody></table></div>
+<h3>Next empirical layer: compare like with like</h3><p>Obtain transaction records with order and line identifiers, date, product ID, region, customer segment, quantity, discount, sales and profit, plus the definitions of cost and returns. Separate unique orders from line items and verify dates, duplicates, missing values and returns before fitting a model.</p><p>Within products that appear at multiple discount levels, compare profit and quantities within similar time periods and regions. Report sample sizes and overlap: products observed at only one discount cannot support a within-product discount comparison. A model with product and time controls can describe conditional associations, but selective discounting still prevents a causal interpretation.</p><h3>Test a policy, not just a correlation</h3><p>For eligible products and customers, predefine a smaller-discount policy and compare it with current practice through a randomized pilot where feasible. Randomize at a level that limits spillovers, such as store or customer group. Use incremental contribution profit per eligible customer or store over the test window as the primary outcome, including non-purchases, returns and implementation cost. Set guardrails for conversion, volume, inventory clearance and repeat purchase. Choose test length and sample size from expected variability and a business-relevant minimum effect before launch.</p>
+<div class="insight"><strong>Conclusion for management:</strong> the strongest next move is a targeted review of local product economics. Central’s weaker margin is not explained by broad product mix alone, and company-wide totals hide several regional losses. Use these comparisons to prioritize investigations, then measure whether a specific policy improves profit without unacceptable losses in demand or service.</div></section>
+<footer id="methods"><div class="section-num">DATA &amp; REPRODUCIBILITY</div><p>This extension recalculates published aggregates from the <a href="https://takizawadaiki.github.io/retail-profitability-analysis/">original dashboard</a>, retrieved September 16, 2026. It does not recreate the original transaction analysis. The public repository contained only HTML; its linked <code>analysis_queries.sql</code> returned 404.</p><p>“Profit” means the dataset’s recorded field, not verified net income or contribution margin. Counts are labeled source records because unique orders and line items cannot be distinguished from the aggregates. The original claims of “real orders” and losses “on every sale” are not substantiated by the available files.</p><p>Rounded totals differ by a few dollars across views. New margin comparisons use sums of displayed sub-category dollars consistently. Discount margins and record counts are retained as published; bucket boundaries, average-discount weighting and period coverage require the original source. No p-values, demand elasticity estimates or causal effects can be recovered from these summaries.</p><div class="section-links"><a download="" href="aggregate-data.json">Published aggregates</a><a download="" href="analysis-results.json">Calculated results</a><a download="" href="reanalysis.py">Reproduction script</a><a href="README.md">Methods and data needed</a></div></footer>
 
 </div>
-
 <script>
 const DATA = {"All": {"kpis": {"total_orders": 9994.0, "total_sales": 2297201.0, "total_profit": 286397.0, "margin_pct": 12.5, "avg_discount": 15.6}, "subcat": [{"name": "Tables", "profit": -17725.0, "sales": 206966.0}, {"name": "Bookcases", "profit": -3473.0, "sales": 114880.0}, {"name": "Supplies", "profit": -1189.0, "sales": 46674.0}, {"name": "Fasteners", "profit": 950.0, "sales": 3024.0}, {"name": "Machines", "profit": 3385.0, "sales": 189239.0}, {"name": "Labels", "profit": 5546.0, "sales": 12486.0}, {"name": "Art", "profit": 6528.0, "sales": 27119.0}, {"name": "Envelopes", "profit": 6964.0, "sales": 16476.0}, {"name": "Furnishings", "profit": 13059.0, "sales": 91705.0}, {"name": "Appliances", "profit": 18138.0, "sales": 107532.0}, {"name": "Storage", "profit": 21279.0, "sales": 223844.0}, {"name": "Chairs", "profit": 26590.0, "sales": 328449.0}, {"name": "Binders", "profit": 30222.0, "sales": 203413.0}, {"name": "Paper", "profit": 34054.0, "sales": 78479.0}, {"name": "Accessories", "profit": 41937.0, "sales": 167380.0}, {"name": "Phones", "profit": 44516.0, "sales": 330007.0}, {"name": "Copiers", "profit": 55618.0, "sales": 149528.0}], "discount": [{"bucket": "0%", "sortkey": 0.0, "margin_pct": 29.5, "profit": 320988.0, "orders": 4798}, {"bucket": "1-20%", "sortkey": 0.1, "margin_pct": 11.9, "profit": 100785.0, "orders": 3803}, {"bucket": "21-40%", "sortkey": 0.3, "margin_pct": -15.3, "profit": -35817.0, "orders": 460}, {"bucket": "40%+", "sortkey": 0.45, "margin_pct": -77.4, "profit": -99559.0, "orders": 933}], "segment": [{"name": "Consumer", "sales": 1161401.0, "profit": 134119.0, "avg_discount": 15.8}, {"name": "Corporate", "sales": 706146.0, "profit": 91979.0, "avg_discount": 15.8}, {"name": "Home Office", "sales": 429653.0, "profit": 60299.0, "avg_discount": 14.7}], "category": [{"name": "Technology", "sales": 836154.0, "profit": 145455.0, "margin_pct": 17.4}, {"name": "Office Supplies", "sales": 719047.0, "profit": 122491.0, "margin_pct": 17.0}, {"name": "Furniture", "sales": 742000.0, "profit": 18451.0, "margin_pct": 2.5}]}, "West": {"kpis": {"total_orders": 3203.0, "total_sales": 725458.0, "total_profit": 108418.0, "margin_pct": 14.9, "avg_discount": 10.9}, "subcat": [{"name": "Bookcases", "profit": -1647.0, "sales": 36004.0}, {"name": "Machines", "profit": -619.0, "sales": 42444.0}, {"name": "Fasteners", "profit": 275.0, "sales": 923.0}, {"name": "Supplies", "profit": 626.0, "sales": 18127.0}, {"name": "Tables", "profit": 1483.0, "sales": 84755.0}, {"name": "Envelopes", "profit": 1909.0, "sales": 4118.0}, {"name": "Labels", "profit": 2303.0, "sales": 5079.0}, {"name": "Art", "profit": 2374.0, "sales": 9212.0}, {"name": "Chairs", "profit": 4028.0, "sales": 101781.0}, {"name": "Furnishings", "profit": 7641.0, "sales": 30073.0}, {"name": "Appliances", "profit": 8261.0, "sales": 30236.0}, {"name": "Storage", "profit": 8645.0, "sales": 70533.0}, {"name": "Phones", "profit": 9111.0, "sales": 98684.0}, {"name": "Paper", "profit": 12119.0, "sales": 26664.0}, {"name": "Binders", "profit": 16097.0, "sales": 55961.0}, {"name": "Accessories", "profit": 16485.0, "sales": 61114.0}, {"name": "Copiers", "profit": 19327.0, "sales": 49749.0}], "discount": [{"bucket": "0%", "sortkey": 0.0, "margin_pct": 26.7, "profit": 76503.0, "orders": 1716}, {"bucket": "1-20%", "sortkey": 0.15, "margin_pct": 11.4, "profit": 47930.0, "orders": 1369}, {"bucket": "40%+", "sortkey": 0.5, "margin_pct": -93.9, "profit": -16015.0, "orders": 118}], "segment": [{"name": "Consumer", "sales": 362881.0, "profit": 57451.0, "avg_discount": 10.8}, {"name": "Corporate", "sales": 225855.0, "profit": 34437.0, "avg_discount": 11.4}, {"name": "Home Office", "sales": 136722.0, "profit": 16530.0, "avg_discount": 10.7}], "category": [{"name": "Office Supplies", "sales": 220853.0, "profit": 52610.0, "margin_pct": 23.8}, {"name": "Technology", "sales": 251992.0, "profit": 44304.0, "margin_pct": 17.6}, {"name": "Furniture", "sales": 252613.0, "profit": 11505.0, "margin_pct": 4.6}]}, "East": {"kpis": {"total_orders": 2848.0, "total_sales": 678781.0, "total_profit": 91523.0, "margin_pct": 13.5, "avg_discount": 14.5}, "subcat": [{"name": "Tables", "profit": -11025.0, "sales": 39140.0}, {"name": "Bookcases", "profit": -1168.0, "sales": 43819.0}, {"name": "Supplies", "profit": -1155.0, "sales": 10760.0}, {"name": "Fasteners", "profit": 264.0, "sales": 820.0}, {"name": "Labels", "profit": 1129.0, "sales": 2603.0}, {"name": "Envelopes", "profit": 1812.0, "sales": 4376.0}, {"name": "Art", "profit": 1900.0, "sales": 7486.0}, {"name": "Furnishings", "profit": 5881.0, "sales": 29071.0}, {"name": "Machines", "profit": 6929.0, "sales": 66106.0}, {"name": "Storage", "profit": 8389.0, "sales": 71613.0}, {"name": "Appliances", "profit": 8391.0, "sales": 34188.0}, {"name": "Paper", "profit": 9015.0, "sales": 20173.0}, {"name": "Chairs", "profit": 9358.0, "sales": 96261.0}, {"name": "Accessories", "profit": 11196.0, "sales": 45033.0}, {"name": "Binders", "profit": 11268.0, "sales": 53498.0}, {"name": "Phones", "profit": 12315.0, "sales": 100615.0}, {"name": "Copiers", "profit": 17023.0, "sales": 53219.0}], "discount": [{"bucket": "0%", "sortkey": 0.0, "margin_pct": 30.8, "profit": 105378.0, "orders": 1449}, {"bucket": "1-20%", "sortkey": 0.1, "margin_pct": 14.8, "profit": 28234.0, "orders": 938}, {"bucket": "21-40%", "sortkey": 0.3, "margin_pct": -15.0, "profit": -17871.0, "orders": 257}, {"bucket": "40%+", "sortkey": 0.5, "margin_pct": -91.0, "profit": -24218.0, "orders": 204}], "segment": [{"name": "Consumer", "sales": 350908.0, "profit": 41191.0, "avg_discount": 14.7}, {"name": "Home Office", "sales": 127464.0, "profit": 26709.0, "avg_discount": 14.1}, {"name": "Corporate", "sales": 200409.0, "profit": 23623.0, "avg_discount": 14.4}], "category": [{"name": "Technology", "sales": 264974.0, "profit": 47462.0, "margin_pct": 17.9}, {"name": "Office Supplies", "sales": 205516.0, "profit": 41015.0, "margin_pct": 20.0}, {"name": "Furniture", "sales": 208291.0, "profit": 3046.0, "margin_pct": 1.5}]}, "South": {"kpis": {"total_orders": 1620.0, "total_sales": 391722.0, "total_profit": 46749.0, "margin_pct": 11.9, "avg_discount": 14.7}, "subcat": [{"name": "Tables", "profit": -4623.0, "sales": 43916.0}, {"name": "Machines", "profit": -1439.0, "sales": 53891.0}, {"name": "Supplies", "profit": 2.0, "sales": 8319.0}, {"name": "Fasteners", "profit": 174.0, "sales": 503.0}, {"name": "Labels", "profit": 1041.0, "sales": 2353.0}, {"name": "Art", "profit": 1059.0, "sales": 4656.0}, {"name": "Bookcases", "profit": 1339.0, "sales": 10899.0}, {"name": "Envelopes", "profit": 1465.0, "sales": 3346.0}, {"name": "Storage", "profit": 2274.0, "sales": 35768.0}, {"name": "Furnishings", "profit": 3443.0, "sales": 17307.0}, {"name": "Copiers", "profit": 3659.0, "sales": 9300.0}, {"name": "Binders", "profit": 3901.0, "sales": 37030.0}, {"name": "Appliances", "profit": 4124.0, "sales": 19525.0}, {"name": "Paper", "profit": 5947.0, "sales": 14151.0}, {"name": "Chairs", "profit": 6612.0, "sales": 45176.0}, {"name": "Accessories", "profit": 7005.0, "sales": 27277.0}, {"name": "Phones", "profit": 10767.0, "sales": 58304.0}], "discount": [{"bucket": "0%", "sortkey": 0.0, "margin_pct": 29.2, "profit": 62981.0, "orders": 805}, {"bucket": "1-20%", "sortkey": 0.2, "margin_pct": 8.2, "profit": 8649.0, "orders": 644}, {"bucket": "21-40%", "sortkey": 0.4, "margin_pct": -39.9, "profit": -6348.0, "orders": 16}, {"bucket": "40%+", "sortkey": 0.45, "margin_pct": -33.8, "profit": -18533.0, "orders": 155}], "segment": [{"name": "Consumer", "sales": 195581.0, "profit": 26914.0, "avg_discount": 14.2}, {"name": "Corporate", "sales": 121886.0, "profit": 15215.0, "avg_discount": 15.8}, {"name": "Home Office", "sales": 74255.0, "profit": 4621.0, "avg_discount": 14.3}], "category": [{"name": "Technology", "sales": 148772.0, "profit": 19992.0, "margin_pct": 13.4}, {"name": "Office Supplies", "sales": 125651.0, "profit": 19986.0, "margin_pct": 15.9}, {"name": "Furniture", "sales": 117299.0, "profit": 6771.0, "margin_pct": 5.8}]}, "Central": {"kpis": {"total_orders": 2323.0, "total_sales": 501240.0, "total_profit": 39706.0, "margin_pct": 7.9, "avg_discount": 24.0}, "subcat": [{"name": "Furnishings", "profit": -3906.0, "sales": 15254.0}, {"name": "Tables", "profit": -3560.0, "sales": 39155.0}, {"name": "Appliances", "profit": -2639.0, "sales": 23582.0}, {"name": "Bookcases", "profit": -1998.0, "sales": 24157.0}, {"name": "Machines", "profit": -1486.0, "sales": 26797.0}, {"name": "Binders", "profit": -1044.0, "sales": 56923.0}, {"name": "Supplies", "profit": -662.0, "sales": 9467.0}, {"name": "Fasteners", "profit": 237.0, "sales": 778.0}, {"name": "Labels", "profit": 1073.0, "sales": 2451.0}, {"name": "Art", "profit": 1195.0, "sales": 5765.0}, {"name": "Envelopes", "profit": 1778.0, "sales": 4637.0}, {"name": "Storage", "profit": 1970.0, "sales": 45930.0}, {"name": "Chairs", "profit": 6593.0, "sales": 85231.0}, {"name": "Paper", "profit": 6972.0, "sales": 17492.0}, {"name": "Accessories", "profit": 7252.0, "sales": 33956.0}, {"name": "Phones", "profit": 12323.0, "sales": 72403.0}, {"name": "Copiers", "profit": 15609.0, "sales": 37260.0}], "discount": [{"bucket": "0%", "sortkey": 0.0, "margin_pct": 31.3, "profit": 76125.0, "orders": 828}, {"bucket": "1-20%", "sortkey": 0.1, "margin_pct": 12.4, "profit": 15973.0, "orders": 852}, {"bucket": "21-40%", "sortkey": 0.3, "margin_pct": -11.7, "profit": -11599.0, "orders": 187}, {"bucket": "40%+", "sortkey": 0.5, "margin_pct": -135.3, "profit": -40793.0, "orders": 456}], "segment": [{"name": "Corporate", "sales": 157996.0, "profit": 18704.0, "avg_discount": 24.0}, {"name": "Home Office", "sales": 91213.0, "profit": 12438.0, "avg_discount": 20.9}, {"name": "Consumer", "sales": 252031.0, "profit": 8564.0, "avg_discount": 25.2}], "category": [{"name": "Technology", "sales": 170416.0, "profit": 33697.0, "margin_pct": 19.8}, {"name": "Office Supplies", "sales": 167026.0, "profit": 8880.0, "margin_pct": 5.3}, {"name": "Furniture", "sales": 163797.0, "profit": -2871.0, "margin_pct": -1.8}]}};
 
@@ -368,7 +378,7 @@ function render(region){
   const worstDisc = d.discount[d.discount.length-1];
   const bestDisc = d.discount[0];
   document.getElementById('insight-discount').innerHTML =
-    `Orders discounted <strong>${worstDisc.bucket}</strong> run a <strong>${worstDisc.margin_pct}%</strong> margin — deeply negative — versus <strong>${bestDisc.margin_pct}%</strong> at ${bestDisc.bucket} discount.`;
+    `Records in the source tier <strong>${worstDisc.bucket}</strong> have an aggregate <strong>${worstDisc.margin_pct}%</strong> margin — deeply negative — versus <strong>${bestDisc.margin_pct}%</strong> at ${bestDisc.bucket} discount.`;
 
   // --- Chart 3: Region ---
   const conn2 = null;
@@ -396,7 +406,7 @@ function render(region){
   const bestRegion = [...regionData].sort((a,b)=>b.margin-a.margin)[0];
   const worstRegion = [...regionData].sort((a,b)=>a.margin-b.margin)[0];
   document.getElementById('insight-region').innerHTML = regionData.length > 1
-    ? `<strong>${bestRegion.name}</strong> converts sales to profit most efficiently at <strong>${bestRegion.margin}%</strong> margin, while <strong>${worstRegion.name}</strong> trails at <strong>${worstRegion.margin}%</strong> despite comparable sales volume.`
+    ? `<strong>${bestRegion.name}</strong> converts sales to profit most efficiently at <strong>${bestRegion.margin}%</strong> margin, while <strong>${worstRegion.name}</strong> trails at <strong>${worstRegion.margin}%</strong> on different sales volumes.`
     : `${region} runs a <strong>${regionData[0].margin}%</strong> profit margin on ${fmtMoney(regionData[0].sales)} in sales.`;
 
   // --- Chart 4: Segment ---
@@ -412,15 +422,16 @@ function render(region){
       scales: { y:{ ticks:{callback:v=>'$'+(v/1000)+'k'}, grid:{color:COLORS.line} }, x:{grid:{display:false}} }
     }
   });
-  const topSeg = d.segment[0];
+  const topSeg = [...d.segment].sort((a,b)=>b.profit-a.profit)[0];
   document.getElementById('insight-segment').innerHTML =
-    `<strong>${topSeg.name}</strong> generates the most total profit (${fmtMoney(topSeg.profit)}) of the three segments, at a ${topSeg.avg_discount}% average discount rate.`;
+    `<strong>${topSeg.name}</strong> generates the most total profit (${fmtMoney(topSeg.profit)}) of the three segments, at a ${topSeg.avg_discount}% reported average discount rate.`;
+  renderExtension(region);
 }
 
 document.querySelectorAll('.price-tag').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.price-tag').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    document.querySelectorAll('.price-tag').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+    btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
     render(btn.dataset.region);
   });
 });
@@ -429,7 +440,37 @@ Chart.defaults.font.family = "'Work Sans', sans-serif";
 Chart.defaults.font.size = 12;
 Chart.defaults.color = '#adb99d';
 
+
+let selectedRegion = 'All';
+function money(n){return (n<0?'−':'')+'$'+Math.abs(n).toLocaleString('en-US',{maximumFractionDigits:0});}
+function lossCells(region){return Object.keys(DATA).filter(r=>r!=='All'&&(region==='All'||r===region)).flatMap(r=>DATA[r].subcat.filter(x=>x.profit<0).map(x=>({...x,region:r}))).sort((a,b)=>a.profit-b.profit);}
+function scenarioMoney(n){return (n<0?'−':'')+'$'+Math.abs(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function renderScenario(){
+ const pool=lossCells(selectedRegion).reduce((a,x)=>a-x.profit,0);
+ const fraction=Number(document.getElementById('recovery').value);
+ const input=document.getElementById('intervention-cost');
+ const raw=input.valueAsNumber;
+ if(!Number.isFinite(raw)||raw<0){document.getElementById('scenario-output').textContent='Enter a non-negative intervention cost.';return;}
+ const gross=pool*fraction; const net=gross-raw;
+ document.getElementById('scenario-output').textContent=`${selectedRegion==='All'?'All regions':selectedRegion}: ${money(pool)} loss pool × ${(fraction*100).toFixed(0)}% = ${scenarioMoney(gross)} assumed recovery. After ${scenarioMoney(raw)} cost: ${scenarioMoney(net)} net change.`;
+}
+function renderExtension(region){
+ selectedRegion=region;
+ const rows=lossCells(region);
+ document.getElementById('loss-caption').textContent=`${region==='All'?'All regions':region} · ${rows.length} negative sub-category–region groups`;
+ document.getElementById('loss-rows').innerHTML=rows.map(x=>`<tr><th>${x.region}</th><td>${x.name}</td><td>${money(x.sales)}</td><td class="loss-number">${money(x.profit)}</td><td>${(100*x.profit/x.sales).toFixed(1)}%</td></tr>`).join('');
+ const segments=DATA[region].segment; const total=segments.reduce((a,x)=>a+x.sales,0);
+ document.getElementById('segment-caption').textContent=`${region==='All'?'All regions':region} · customer segments`;
+ document.getElementById('segment-rows').innerHTML=segments.map(x=>`<tr><th>${x.name}</th><td>${(100*x.sales/total).toFixed(1)}%</td><td>${money(x.profit)}</td><td>${(100*x.profit/x.sales).toFixed(1)}%</td></tr>`).join('');
+ const leader=[...segments].sort((a,b)=>b.profit/b.sales-a.profit/a.sales)[0];
+ document.getElementById('segment-detail').textContent=`${leader.name} has the highest margin in this view: ${(100*leader.profit/leader.sales).toFixed(1)}%. This is historical efficiency on recorded sales, not a forecast of returns from acquiring more customers.`;
+ renderScenario();
+}
+document.getElementById('recovery').addEventListener('change',renderScenario);
+document.getElementById('intervention-cost').addEventListener('input',renderScenario);
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) Chart.defaults.animation = false;
 render('All');
 </script>
-<div class="dt-footer"><span>Daiki Takizawa · Retail analytics</span><a href="/index.html#projects">Back to the portfolio ↗</a></div></body>
+<div class="dt-footer"><span>Daiki Takizawa · Retail analytics</span><a href="https://takizawadaiki.github.io/index.html#projects">Back to the portfolio ↗</a></div></body>
 </html>
